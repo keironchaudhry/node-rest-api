@@ -14,6 +14,8 @@ const connectToMongo = async () => {
 
 connectToMongo();
 
+// Middleware to go here
+
 app.listen(8800, () => {
   console.log("Backend server is running");
 });
