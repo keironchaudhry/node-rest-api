@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const port = 3000;
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const helmet = require("helmet");
@@ -15,7 +16,14 @@ const connectToMongo = async () => {
 connectToMongo();
 
 // Middleware to go here
+app.use(express.json());
+app.use(helmet());
+app.use(morgan("common"));
 
-app.listen(8800, () => {
+app.get("/", (req, res) => {
+  res.send("Welcome to home page!");
+});
+
+app.listen(port, () => {
   console.log("Backend server is running");
 });
