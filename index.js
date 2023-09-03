@@ -24,6 +24,10 @@ app.get("/", (req, res) => {
   res.send("Welcome to home page!");
 });
 
+app.get("/users", (req, res) => {
+  res.send("Users page.");
+});
+
 app.listen(port, () => {
   console.log("Backend server is running");
 });
