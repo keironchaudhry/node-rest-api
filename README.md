@@ -31,6 +31,10 @@
 
 - A request logger middleware which returns relevant properties, link to be found [here](https://www.npmjs.com/package/morgan).
 
+- An example of what `morgan` does:
+
+[morgan-snippet](/documentation/images/morgan%20snippet.png)
+
 ### **nodemon**
 
 - A package that listens to the modifications of a node.js file and prevents constant need to reset, link to be found [here](https://www.npmjs.com/package/nodemon).
