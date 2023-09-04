@@ -47,3 +47,8 @@
 
 ![bcrypt-snippet](/documentation/images/bcrypt-snippet-1.png)
 ![bcrypt-snippet-2](/documentation/images/bcrypt-snippet-2.png)
+
+### **Postman**
+
+- A web server used to probe or build APIs (i.e., users can GET, POST, PUT etc. into a database), link to be found [here](https://web.postman.co/)
+- Very quick/helpful in probing backend code where actual users aren't available
