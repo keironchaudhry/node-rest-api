@@ -33,8 +33,17 @@
 
 - An example of what `morgan` does:
 
-[morgan-snippet](/documentation/images/morgan%20snippet.png)
+![morgan-snippet](/documentation/images/morgan%20snippet.png)
 
 ### **nodemon**
 
 - A package that listens to the modifications of a node.js file and prevents constant need to reset, link to be found [here](https://www.npmjs.com/package/nodemon).
+
+### **bcrypt**
+
+- A package used to hash passwords so that they cannot be exposed when shown in the database, link to be found [here](https://www.npmjs.com/package/bcrypt).
+
+- An exmaple of what `bcrypt` does in action:
+
+![bcrypt-snippet](/documentation/images/bcrypt-snippet-1.png)
+![bcrypt-snippet-2](/documentation/images/bcrypt-snippet-2.png)
