@@ -19,6 +19,22 @@
   console.log("Connected to MongoDB");
 };`
 
+- The Mongoose library allows us to create models using the following: 
+
+* `const yourSchema = new mongoose.Schema(
+  {
+    schemaField: {
+      type: String,
+      require: true,
+      unique: true,
+    },
+  };
+);`
+
+- The Mongoose library also allows us to use certain built-in methods to coordinate our database. An example of some of these methods are the following that have been used so far:
+
+* `findById`, `findByIdAndUpdate`, `findByIdAndDelete`, `updateOne` (with this you can `{$push { schemaField: parameter.x.y }}` or `{$pull { schemaField: parameter.x.y }}`. These "push" parameters as data into the DB or "pull" pulls it out, such as with following or unfollowing another user).
+
 ### **dotenv**
 
 - A module that is used to store secret keys using a process.env file, link to be found [here](https://www.npmjs.com/package/dotenv).
