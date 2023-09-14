@@ -52,7 +52,7 @@ router.put("/:id/like", async (req, res) => {
       await post.updateOne({ $push: { likes: req.body.userId } });
       res.status(200).json("You liked this post.");
     } else {
-      post.updateOne({ $pull: { likes: req.body.userId } });
+      await post.updateOne({ $pull: { likes: req.body.userId } });
       res.status(200).json("You unliked this post.");
     }
   } catch (err) {
