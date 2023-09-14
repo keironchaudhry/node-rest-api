@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const Post = require("../models/Post");
+const User = require("../models/User");
 
 // Create a post
 router.post("/create", async (req, res) => {
@@ -82,7 +83,7 @@ router.get("/feed/all", async (req, res) => {
     );
     res.json(userPosts.concat(...followingPosts));
   } catch (err) {
-    res.status(500).json(err);
+    console.log(err)
   }
 });
 
